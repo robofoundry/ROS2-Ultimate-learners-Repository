@@ -8,6 +8,7 @@
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
+  <depend>gazebo_ros</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -16,5 +17,9 @@
 
   <export>
     <build_type>ament_python</build_type>
+    <!-- following lines are not needed but that is another way to setup gazebo env hook
+    <gazebo_ros gazebo_plugin_path="lib"/>
+    <gazebo_ros gazebo_model_path="${prefix}/bazu"/>
+    <gazebo_ros gazebo_media_path="${prefix}/bazu"/> -->
   </export>
 </package>

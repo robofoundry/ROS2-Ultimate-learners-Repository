@@ -10,7 +10,7 @@
   
       <visual>
       <geometry>
-        <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/base.stl"  />
+        <mesh filename="package://base.stl"  />
       </geometry>
         <material name="white">
           <color rgba="1 1 1 1"/>
@@ -19,7 +19,7 @@
   
       <collision>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/base.stl"  />
+          <mesh filename="package://base.stl"  />
         </geometry>
       </collision>
     </link>
@@ -39,7 +39,7 @@
   
       <visual>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_1.stl"  />
+          <mesh filename="package://joint_1.stl"  />
         </geometry>
         <material name="black">
         </material>
@@ -47,7 +47,7 @@
 
       <collision>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_1.stl"  />
+          <mesh filename="package://joint_1.stl"  />
         </geometry>
         <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       </collision>
@@ -73,7 +73,7 @@
   
       <visual>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_2.stl"  />
+          <mesh filename="package://joint_2.stl"  />
         </geometry>
         <material name="black">
         </material>
@@ -81,7 +81,7 @@
 
       <collision>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_2.stl"  />
+          <mesh filename="package://joint_2.stl"  />
         </geometry>
         <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       </collision>
@@ -109,7 +109,7 @@
   
       <visual>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_3.stl"  />
+          <mesh filename="package://joint_3.stl"  />
         </geometry>
         <material name="white">
         </material>
@@ -117,7 +117,7 @@
 
       <collision>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_3.stl"  />
+          <mesh filename="package://joint_3.stl"  />
         </geometry>
         <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       </collision>
@@ -145,7 +145,7 @@
   
       <visual>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_4.stl"  />
+          <mesh filename="package://joint_4.stl"  />
         </geometry>
         <material name="black">
         </material>
@@ -153,7 +153,7 @@
 
       <collision>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_4.stl"  />
+          <mesh filename="package://joint_4.stl"  />
         </geometry>
         <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       </collision>
@@ -181,7 +181,7 @@
   
       <visual>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_5.stl"  />
+          <mesh filename="package://joint_5.stl"  />
         </geometry>
         <material name="white">
         </material>
@@ -189,7 +189,7 @@
 
       <collision>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_5.stl"  />
+          <mesh filename="package://joint_5.stl"  />
         </geometry>
         <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       </collision>
@@ -216,7 +216,7 @@
   
       <visual>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_6.stl"  />
+          <mesh filename="package://joint_6.stl"  />
         </geometry>
         <material name="black">
         </material>
@@ -224,7 +224,7 @@
 
       <collision>
         <geometry>
-          <mesh filename="/home/luqman/ros2_workspace/src/bazu/meshes/joint_6.stl"  />
+          <mesh filename="package://joint_6.stl"  />
         </geometry>
         <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
       </collision>
@@ -310,7 +310,7 @@
     <gazebo>
       <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
         <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
-        <parameters>/home/luqman/ros2_workspace/src/bazu_6dof/config/1_effortPosition_controller.yaml</parameters>
+        <parameters>package://bazu_6dof/config/1_effortPosition_controller.yaml</parameters>
       </plugin>
     </gazebo> -->
 
